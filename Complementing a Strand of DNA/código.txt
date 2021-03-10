@@ -1,0 +1,16 @@
+file = open('files/teste.txt', 'r')
+content = file.read()
+file.close()
+
+result = ''
+
+for i in range(len(content)-1, -1, -1):
+    if content[i] == 'A':
+        result += 'T'
+    if content[i] == 'T':
+        result += 'A'
+    if content[i] == 'C':
+        result += 'G'
+    if content[i] == 'G':
+        result += 'C'
+print(result)
