@@ -1,0 +1,5 @@
+file = open('files/teste.txt', 'r')
+content = file.read();
+file.close();
+
+print(content.upper().replace('T', 'U'))
