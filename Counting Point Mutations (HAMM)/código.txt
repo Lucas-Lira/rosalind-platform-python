@@ -1,0 +1,14 @@
+file = open('files/validation.txt', 'r')
+content = file.readlines()
+file.close()
+
+number_of_different_values = 0
+
+content[0] = content[0].replace('\n', '')
+content[1] = content[1].replace('\n', '')
+
+for i in range(len(content[0])):
+    if content[0][i] != content[1][i]:
+        number_of_different_values += 1
+
+print(number_of_different_values)
